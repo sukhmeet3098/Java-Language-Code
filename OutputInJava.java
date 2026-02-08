@@ -9,5 +9,13 @@ public class OutputInJava {
     System.out.print("Hello World with Java\n");
     System.out.print("Hello World with Java\n");
     System.out.print("Hello World with Java");
+
+    //Practice Question
+    System.out.println();
+    System.out.println("Practice Question");
+    System.out.println("*");
+    System.out.println("**");
+    System.out.println("***");
+    System.out.println("****");
   }
 }
