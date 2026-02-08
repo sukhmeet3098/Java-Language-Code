@@ -9,5 +9,13 @@ public class InputFromUser {
     String name = sc.nextLine(); // Prints The Complete String
     System.out.println(name);
 
+
+    // Practice Question
+
+    int a = sc.nextInt();
+    int b = sc.nextInt();
+
+    int sum = a + b;
+    System.out.println(sum);
   }
 }
