@@ -28,7 +28,7 @@ public class ConditionalStatements {
 
     // If-Elseif-Else Statements
 
-    int a = sc.nextInt();
+    /*int a = sc.nextInt();
     int b = sc.nextInt();
 
     if(a==b) {
@@ -39,6 +39,23 @@ public class ConditionalStatements {
     }
     else{
       System.out.println("a is lesser");
+    }*/
+
+    // Switch Statement
+
+    int button = sc.nextInt();
+
+    switch (button) {
+      case 1: System.out.println("Hello");
+      break;
+      
+      case 2: System.out.println("Namaste");
+      break;
+
+      case 3: System.out.println("Bonjour");
+      break;
+
+      default: System.out.println("Invalid Button");
     }
   }
 }
