@@ -24,13 +24,25 @@ public class Loops {
     // }
 
     // Do - While Loop
-    int i = 0;
+    // int i = 0;
+
+    // do {
+    //   //System.out.println(i);
+    //   System.out.print(i + " ");
+    //   i = i + 1;
+    // }while(i <= 10);
+
+    // Check the difference between while and do while loop
+    int i = 12;
+
+    while (i < 11) {
+      System.out.println("Sukhmeet Singh");
+      i = i + 1;
+    }
 
     do {
-      //System.out.println(i);
-      System.out.print(i + " ");
+      System.out.println("Sukhmeet Singh");
       i = i + 1;
-    }while(i <= 10);
-
+    } while(i < 11);
   }
 }
