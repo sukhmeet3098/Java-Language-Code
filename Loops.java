@@ -7,10 +7,21 @@ public class Loops {
     
     // Pratice Question
     // counter ++ = counter = counter + 1
-    for(int counter = 0; counter <= 10; counter ++){
-      //System.out.println(counter);
-      System.out.print(counter + " ");
+    // for(int counter = 0; counter <= 10; counter ++){
+    //   //System.out.println(counter);
+    //   System.out.print(counter + " ");
+    // }
+
+    // While Loop
+    int i = 0;
+
+    while(i <= 10){
+      //System.out.println(i);
+      System.out.print(i + " ");
+      i = i + 1;
     }
 
+    // Do - While Loop
+    
   }
 }
