@@ -1,3 +1,5 @@
+import javax.swing.plaf.synth.SynthPasswordFieldUI;
+
 public class Loops {
   public static void main(String[] args) {
     // For Loop Intialization
@@ -13,15 +15,22 @@ public class Loops {
     // }
 
     // While Loop
+    // int i = 0;
+
+    // while(i <= 10){
+    //   //System.out.println(i);
+    //   System.out.print(i + " ");
+    //   i = i + 1;
+    // }
+
+    // Do - While Loop
     int i = 0;
 
-    while(i <= 10){
+    do {
       //System.out.println(i);
       System.out.print(i + " ");
       i = i + 1;
-    }
+    }while(i <= 10);
 
-    // Do - While Loop
-    
   }
 }
