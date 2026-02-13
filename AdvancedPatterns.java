@@ -71,22 +71,52 @@ public class AdvancedPatterns {
 
     // Palindromic Pattern
 
-    int n = 5;
-    for(int i = 1; i <= n; i++){
+    // int n = 5;
+    // for(int i = 1; i <= n; i++){
       
+    //   // Spaces Part
+    //   for(int j = 1; j <= (n-i); j++){
+    //     System.out.print(" ");
+    //   }
+
+    //   //First Half Numbers
+    //   for(int j = i; j >= 1; j--){
+    //     System.out.print(j);
+    //   }
+
+    //   // Second Half Number
+    //   for(int j = 2; j <= i; j++){
+    //     System.out.print(j);
+    //   }
+    //   System.out.println();
+    // }
+
+    // Diamond Pattern
+
+    int n = 4;
+
+    // Upper Part
+    for(int i = 1; i <= n; i++){
       // Spaces Part
       for(int j = 1; j <= (n-i); j++){
         System.out.print(" ");
       }
-
-      //First Half Numbers
-      for(int j = i; j >= 1; j--){
-        System.out.print(j);
+      // Stars Part
+      for(int j = 1; j <= (2*i)-1; j++){
+        System.out.print("*");
       }
+      System.out.println();
+    }
 
-      // Second Half Number
-      for(int j = 2; j <= i; j++){
-        System.out.print(j);
+    // Lower Part
+    for(int i = n; i >= 1; i--){
+      //Spaces Part
+      for(int j = 1; j <= (n-i); j++){
+        System.out.print(" ");
+      }
+      // Stars Part
+      for(int j = 1; j <= (2*i)-1; j++){
+        System.out.print("*");
       }
       System.out.println();
     }
