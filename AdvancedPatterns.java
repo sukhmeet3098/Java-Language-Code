@@ -38,5 +38,20 @@ public class AdvancedPatterns {
       }
       System.out.println();
     }
+
+    // Solid Rhombus Pattern
+    int num = 5;
+
+    for(int i = 1; i<=num; i++){
+      //Spaces Part
+      for(int j = 1; j <= (num-i); j++){
+        System.out.print(" ");
+      }
+      //Stars Part
+      for(int j = 1; j <= num; j++){
+        System.out.print("*");
+      }
+      System.out.println();
+    }
   }
 }
