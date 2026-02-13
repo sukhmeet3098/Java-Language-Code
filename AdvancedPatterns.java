@@ -55,19 +55,40 @@ public class AdvancedPatterns {
     // }
     
     // Number Pyramid Pattern
-    int n = 5;
+    // int n = 5;
 
-    for(int i = 0; i <= n; i++){
+    // for(int i = 0; i <= n; i++){
+    //   // Spaces Part
+    //   for(int j = 1; j <= (n-i); j++){
+    //     System.out.print(" ");
+    //   }
+    //   // Number Part
+    //   for(int j = 1; j <= i; j++){
+    //     System.out.print(i + " ");
+    //   }
+    //   System.out.println();
+    // }
+
+    // Palindromic Pattern
+
+    int n = 5;
+    for(int i = 1; i <= n; i++){
+      
       // Spaces Part
       for(int j = 1; j <= (n-i); j++){
         System.out.print(" ");
       }
-      // Number Part
-      for(int j = 1; j <= i; j++){
-        System.out.print(i + " ");
+
+      //First Half Numbers
+      for(int j = i; j >= 1; j--){
+        System.out.print(j);
+      }
+
+      // Second Half Number
+      for(int j = 2; j <= i; j++){
+        System.out.print(j);
       }
       System.out.println();
     }
-
   }
 }
