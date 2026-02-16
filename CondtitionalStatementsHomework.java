@@ -21,11 +21,20 @@ public class CondtitionalStatementsHomework {
     else if(operator == '*'){
       System.out.println("Multipy: " + (num1 * num2));
     }
-    else if(operator == '-'){
-      System.out.println("Division: " + (num1 / num2));
+    else if(operator == '/'){
+      if(num2 == 0){
+        System.out.println("Invalid Numbers");
+      }else{
+        System.out.println("Division: " + (num1 / num2));
+      }
     }
-    else if(operator == '-'){
-      System.out.println("Modulus: " + (num1 % num2));
+    else if(operator == '%'){
+      if(num2 == 0){
+        System.out.println("Invalid Numbers");
+      } else{
+        System.out.println("Modulus: " + (num1 % num2));
+      }
+      
     }
 
     // Display Month Name from the User Input
