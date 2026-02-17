@@ -61,6 +61,21 @@ public class JavaFirstExercise {
     }
   }
 
+  public static void printPowerOfX(int x, int n) {
+    if (n >= 0 && x >= 0) {
+      int power = 1;
+      while (n != 0) {
+        power = x * power;
+        n--;
+      }
+      System.out.println("Power of " + x + " is: " + power);
+      return;
+    } else {
+      System.out.println("Numbers not be in Negative.");
+      return;
+    }
+  }
+
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
 
@@ -94,10 +109,23 @@ public class JavaFirstExercise {
 
     // Write a function that takes in age as input and returns if that person is
     // eligible to vote or not. A person of age > 18 is eligible to vote.
-    int age = sc.nextInt();
-    String check = eligibleToVote(age);
-    if (check != "0") {
-      System.out.println(check);
-    }
+    // int age = sc.nextInt();
+    // String check = eligibleToVote(age);
+    // if (check != "0") {
+    // System.out.println(check);
+    // }
+
+    // Write an infi nite loop using do while condition.
+    // int i = 1;
+    // do {
+    // System.out.println("Sukhmeet Singh");
+    // } while (i > 0);
+
+    // Two numbers are entered by the user, x and n. Write a function to find the
+    // value of one number raised to the power of another i.e. x^n.
+
+    int x = sc.nextInt();
+    int n = sc.nextInt();
+    printPowerOfX(x, n);
   }
 }
