@@ -24,6 +24,18 @@ public class JavaFirstExercise {
     return;
   }
 
+  public static int findGreaterNumber(int a, int b) {
+    int num1 = a;
+    int num2 = b;
+
+    if (a > b) {
+      return a;
+    } else {
+      return b;
+    }
+
+  }
+
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
 
@@ -36,8 +48,14 @@ public class JavaFirstExercise {
     // System.out.println("Average is : " + average);
 
     // Write a function to print the sum of all odd numbers from 1 to n.
-    int num = sc.nextInt();
-    sumOfOdd(num);
+    // int num = sc.nextInt();
+    // sumOfOdd(num);
 
+    // Write a function which takes in 2 numbers and returns the greater of those
+    // two.
+    int num1 = sc.nextInt();
+    int num2 = sc.nextInt();
+    int greaterNumber = findGreaterNumber(num1, num2);
+    System.out.println("Greater Number is : " + greaterNumber);
   }
 }
