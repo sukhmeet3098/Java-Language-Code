@@ -36,6 +36,18 @@ public class JavaFirstExercise {
 
   }
 
+  public static float findArea(int radius) {
+    if (radius > 0) {
+      float area = 0;
+      final float PI = 3.14f;
+      area = PI * (radius * radius);
+      return area;
+    } else {
+      System.out.println("Number must be greater than zero.");
+      return 0;
+    }
+  }
+
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
 
@@ -53,9 +65,18 @@ public class JavaFirstExercise {
 
     // Write a function which takes in 2 numbers and returns the greater of those
     // two.
-    int num1 = sc.nextInt();
-    int num2 = sc.nextInt();
-    int greaterNumber = findGreaterNumber(num1, num2);
-    System.out.println("Greater Number is : " + greaterNumber);
+    // int num1 = sc.nextInt();
+    // int num2 = sc.nextInt();
+    // int greaterNumber = findGreaterNumber(num1, num2);
+    // System.out.println("Greater Number is : " + greaterNumber);
+
+    // Write a function that takes in the radius as input and returns the
+    // circumference of a circle.
+
+    int radius = sc.nextInt();
+    float area = findArea(radius);
+    if (area != 0.0) {
+      System.out.println("Area is: " + area);
+    }
   }
 }
