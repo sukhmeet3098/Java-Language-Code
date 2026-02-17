@@ -48,6 +48,19 @@ public class JavaFirstExercise {
     }
   }
 
+  public static String eligibleToVote(int age) {
+    if (age > 0) {
+      if (age > 18) {
+        return "Person Eligible to Vote.";
+      } else {
+        return "Person is not Eligible to Vote.";
+      }
+    } else {
+      System.out.println("Number must be greater than zero.");
+      return "0";
+    }
+  }
+
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
 
@@ -73,10 +86,18 @@ public class JavaFirstExercise {
     // Write a function that takes in the radius as input and returns the
     // circumference of a circle.
 
-    int radius = sc.nextInt();
-    float area = findArea(radius);
-    if (area != 0.0) {
-      System.out.println("Area is: " + area);
+    // int radius = sc.nextInt();
+    // float area = findArea(radius);
+    // if (area != 0.0) {
+    // System.out.println("Area is: " + area);
+    // }
+
+    // Write a function that takes in age as input and returns if that person is
+    // eligible to vote or not. A person of age > 18 is eligible to vote.
+    int age = sc.nextInt();
+    String check = eligibleToVote(age);
+    if (check != "0") {
+      System.out.println(check);
     }
   }
 }
