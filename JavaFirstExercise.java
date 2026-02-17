@@ -76,6 +76,33 @@ public class JavaFirstExercise {
     }
   }
 
+  public static void printFibonacciSeries(int num) {
+    if (num > 0) {
+      if (num == 1) {
+        System.out.print(0);
+        return;
+      } else if (num == 2) {
+        System.out.print(0 + " " + 1);
+        return;
+      } else {
+        int a = 0;
+        int b = 1;
+        int c = a + b;
+        System.out.print(a + " " + b);
+        for (int i = 3; i <= num; i++) {
+          System.out.print(" " + c);
+          a = b;
+          b = c;
+          c = a + b;
+        }
+        return;
+      }
+    } else {
+      System.out.println("Number must be greater than zero.");
+      return;
+    }
+  }
+
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
 
@@ -124,8 +151,16 @@ public class JavaFirstExercise {
     // Two numbers are entered by the user, x and n. Write a function to find the
     // value of one number raised to the power of another i.e. x^n.
 
-    int x = sc.nextInt();
-    int n = sc.nextInt();
-    printPowerOfX(x, n);
+    // int x = sc.nextInt();
+    // int n = sc.nextInt();
+    // printPowerOfX(x, n);
+
+    // Write a program to print Fibonacci series of n terms where n is input by user
+    // : 0 1 1 2 3 5 8 13 21 .....
+    // In the Fibonacci series, a number is the sum of the previous 2 numbers that
+    // came before it.
+
+    int userInput = sc.nextInt();
+    printFibonacciSeries(userInput);
   }
 }
