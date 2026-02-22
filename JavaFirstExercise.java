@@ -165,27 +165,44 @@ public class JavaFirstExercise {
 
     // Write a program to enter the numbers till the user wants and at the end it
     // should display the count of positive, negative and zeros entered.
-    int end = 0;
-    int marks = 0;
-    int postiveCount = 0;
-    int negativeCount = 0;
-    int zerosCount = 0;
-    do {
-      System.out.println("Enter the number");
-      marks = sc.nextInt();
-      if (marks > 0) {
-        postiveCount++;
-      } else if (marks == 0) {
-        zerosCount++;
-      } else {
-        negativeCount++;
-      }
-      System.out.println("Enter 1 for continue and 0 for stop.");
-      end = sc.nextInt();
-    } while (end != 0);
+    // int end = 0;
+    // int marks = 0;
+    // int postiveCount = 0;
+    // int negativeCount = 0;
+    // int zerosCount = 0;
+    // do {
+    // System.out.println("Enter the number");
+    // marks = sc.nextInt();
+    // if (marks > 0) {
+    // postiveCount++;
+    // } else if (marks == 0) {
+    // zerosCount++;
+    // } else {
+    // negativeCount++;
+    // }
+    // System.out.println("Enter 1 for continue and 0 for stop.");
+    // end = sc.nextInt();
+    // } while (end != 0);
 
-    System.out.println("Total Positive Numbers are: " + postiveCount);
-    System.out.println("Total Negative Numbers are: " + negativeCount);
-    System.out.println("Total Zeros Numbers are: " + zerosCount);
+    // System.out.println("Total Positive Numbers are: " + postiveCount);
+    // System.out.println("Total Negative Numbers are: " + negativeCount);
+    // System.out.println("Total Zeros Numbers are: " + zerosCount);
+
+    // Write a function that calculates the Greatest Common Divisor of 2 numbers.
+    // (HCF of two numbers.)
+    int smallerNumber = sc.nextInt();
+    int biggerNumber = sc.nextInt();
+    int firstNumber = smallerNumber;
+    int secondNumber = biggerNumber;
+    int remainder = Integer.MIN_VALUE;
+
+    while (remainder != 0) {
+      remainder = (biggerNumber % smallerNumber); // Take the modulus of two numbers
+      biggerNumber = smallerNumber;
+      if (remainder != 0) {
+        smallerNumber = remainder;
+      }
+    }
+    System.out.println("GCD of " + firstNumber + " and " + secondNumber + " is: " + smallerNumber);
   }
 }
