@@ -198,9 +198,9 @@ public class JavaFirstExercise {
 
     while (remainder != 0) {
       remainder = (biggerNumber % smallerNumber); // Take the modulus of two numbers
-      biggerNumber = smallerNumber;
+      biggerNumber = smallerNumber; // Replace the bigger number with smaller number
       if (remainder != 0) {
-        smallerNumber = remainder;
+        smallerNumber = remainder; // Replace the smaller number with remainder number
       }
     }
     System.out.println("GCD of " + firstNumber + " and " + secondNumber + " is: " + smallerNumber);
