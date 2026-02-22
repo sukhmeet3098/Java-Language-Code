@@ -160,7 +160,32 @@ public class JavaFirstExercise {
     // In the Fibonacci series, a number is the sum of the previous 2 numbers that
     // came before it.
 
-    int userInput = sc.nextInt();
-    printFibonacciSeries(userInput);
+    // int userInput = sc.nextInt();
+    // printFibonacciSeries(userInput);
+
+    // Write a program to enter the numbers till the user wants and at the end it
+    // should display the count of positive, negative and zeros entered.
+    int end = 0;
+    int marks = 0;
+    int postiveCount = 0;
+    int negativeCount = 0;
+    int zerosCount = 0;
+    do {
+      System.out.println("Enter the number");
+      marks = sc.nextInt();
+      if (marks > 0) {
+        postiveCount++;
+      } else if (marks == 0) {
+        zerosCount++;
+      } else {
+        negativeCount++;
+      }
+      System.out.println("Enter 1 for continue and 0 for stop.");
+      end = sc.nextInt();
+    } while (end != 0);
+
+    System.out.println("Total Positive Numbers are: " + postiveCount);
+    System.out.println("Total Negative Numbers are: " + negativeCount);
+    System.out.println("Total Zeros Numbers are: " + zerosCount);
   }
 }
