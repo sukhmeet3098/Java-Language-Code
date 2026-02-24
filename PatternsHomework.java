@@ -47,13 +47,27 @@ public class PatternsHomework {
     // }
 
     // Print a hollow Butterfly.
-    for (int i = 1; i <= (2 * rows); i++) {
-      for (int j = 1; j <= (2 * rows); j++) {
-        if (j == 1 || i == j || j == (2 * rows) || j == ((2 * rows) - i + 1)) {
-          System.out.print("*");
-        } else {
-          System.out.print(" ");
-        }
+    // for (int i = 1; i <= (2 * rows); i++) {
+    // for (int j = 1; j <= (2 * rows); j++) {
+    // if (j == 1 || i == j || j == (2 * rows) || j == ((2 * rows) - i + 1)) {
+    // System.out.print("*");
+    // } else {
+    // System.out.print(" ");
+    // }
+    // }
+    // System.out.println();
+    // }
+    // }
+
+    // Print Pascal’s Triangle.
+    for (int i = 1; i <= rows; i++) {
+      for (int j = 1; j <= (rows - i); j++) {
+        System.out.print(" ");
+      }
+      int number = 1;
+      for (int j = 1; j <= i; j++) {
+        System.out.print(number + " ");
+        number = number * (i - j) / j;
       }
       System.out.println();
     }
