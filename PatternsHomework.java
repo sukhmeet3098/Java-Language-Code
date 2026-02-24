@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class PatternsHomework {
   public static void main(String[] args) {
@@ -25,25 +25,37 @@ public class PatternsHomework {
 
     // Print a hollow Rhombus.
 
-    for (int i = 1; i <= rows; i++) {
-      if (i == 1 || i == rows) {
-        for (int j = 1; j <= (rows - i); j++) {
-          System.out.print(" ");
-        }
-        for (int j = 1; j <= rows; j++) {
+    // for (int i = 1; i <= rows; i++) {
+    // if (i == 1 || i == rows) {
+    // for (int j = 1; j <= (rows - i); j++) {
+    // System.out.print(" ");
+    // }
+    // for (int j = 1; j <= rows; j++) {
+    // System.out.print("*");
+    // }
+    // System.out.println();
+    // } else {
+    // for (int j = 1; j <= (rows - i); j++) {
+    // System.out.print(" ");
+    // }
+    // System.out.print("*");
+    // for (int j = 1; j <= (rows - 2); j++) {
+    // System.out.print(" ");
+    // }
+    // System.out.println("*");
+    // }
+    // }
+
+    // Print a hollow Butterfly.
+    for (int i = 1; i <= (2 * rows); i++) {
+      for (int j = 1; j <= (2 * rows); j++) {
+        if (j == 1 || i == j || j == (2 * rows) || j == ((2 * rows) - i + 1)) {
           System.out.print("*");
-        }
-        System.out.println();
-      } else {
-        for (int j = 1; j <= (rows - i); j++) {
+        } else {
           System.out.print(" ");
         }
-        System.out.print("*");
-        for (int j = 1; j <= (rows - 2); j++) {
-          System.out.print(" ");
-        }
-        System.out.println("*");
       }
+      System.out.println();
     }
   }
 }
